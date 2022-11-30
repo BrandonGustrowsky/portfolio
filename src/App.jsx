@@ -93,7 +93,7 @@ function App() {
                 a given modification to the first string took place.
               </Typography>
             </div>
-            <Typography className="language">C++</Typography>
+            <Typography className="language">Java</Typography>
           </Paper>
           <Paper elevation={8} className="card">
             {/* Image Source: https://www.moneycrashers.com/best-credit-cards-online-shopping/ */}
