@@ -16,6 +16,7 @@ function App() {
               size="large"
               edge="start"
               aria-label="menu"
+              href="https://www.linkedin.com/in/brandon-gustrowsky/"
             >
               <LinkedInIcon
                 className="icon" />
@@ -26,6 +27,7 @@ function App() {
               size="large"
               edge="start"
               aria-label="menu"
+              href="https://github.com/BrandonGustrowsky"
             >
               <GitHubIcon
                 className="icon" />
@@ -36,6 +38,7 @@ function App() {
               size="large"
               edge="start"
               aria-label="menu"
+              href="mailto:bgustrowsky@southern.edu"
             >
               <EmailIcon
                 className="icon" />
@@ -65,7 +68,7 @@ function App() {
         </Paper>
         <hr />
         <Typography variant="h3" className="sectionTitle">Projects</Typography>
-        <section style={{ margin: "10px 1%", display: "flex", gap: "5%", rowGap: "25px", justifyContent: "space-evenly", flexWrap: "wrap" }}>
+        <section className="sectionLayout">
           <Paper elevation={8} className="card">
             {/* Image source: http://www.alltechflix.com/benefits-computer-programmer/ */}
             <img src="./src/assets/binarySearchTree.jpg" alt="A graphic of a binary tree, intended to represent a binary search tree." style={{ height: "270px", width: "100%", borderRadius: "5px" }} />
@@ -118,7 +121,23 @@ function App() {
             <Typography className="language">React, JavaScript, MaterialUI</Typography>
           </Paper>
         </section>
-
+        <hr />
+        <Typography variant="h4" className="sectionTitle">Professional</Typography>
+        <section className="sectionLayout">
+        <Paper elevation={8} className="card">
+            {/* Image Source: https://execed.kelley.iu.edu/have-a-project-manager-mindset/ */}
+            <img src="./src/assets/sharehimImg.jpg" alt="A graphic of a binary tree, intended to represent a binary search tree." style={{ width: "100%", height: "270px", borderRadius: "5px" }} />
+            <Typography variant="h1" style={{ fontSize: "35px", textAlign: "center", textShadow: "5px 5px 5px rgba(0, 0, 0, 0.15)" }}>ShareHim Content Authoring</Typography>
+            <div style={{ margin: "10px" }}>
+              <Typography variant="p" style={{ textShadow: "5px 5px 5px rgba(0, 0, 0, 0.15)" }}>
+                A hierarchicaly structured project management website. An authenticated and authorized user with no special 
+                permissions may view projects and presentations they have been added to contribute to them, as well as forums.
+                Other roles include, but not limited to, presentation manager, project manager, and administrator.
+              </Typography>
+            </div>
+            <Typography className="language">PHP, Yii2, HTML, CSS, Ajax, JQuery</Typography>
+          </Paper>
+        </section>
       </main>
     </>
   )
