@@ -52,7 +52,7 @@ function App() {
           <img src="./src/assets/banner.jpg" alt="Man typing on keyboard, website banner" id="splashImg" />
           <div className="bannerGradient"></div>
         </div>
-        <section style={{ display: "flex", justifyContent: "space-between", margin: "0 5%", zIndex: 4, position: "absolute", top: "150px", alignItems: "center" }}>
+        <section id="bannerInformation">
           <Typography className="profileText">Brandon Gustrowsky</Typography>
           <img src="./src/assets/brandon-linkedin.jpg" alt="Brandon Gustrowsky's profile picture, standing outside in suit and tie" id="profileImg" />
         </section>
@@ -133,6 +133,19 @@ function App() {
                 A hierarchicaly structured project management website. An authenticated and authorized user with no special 
                 permissions may view projects and presentations they have been added to contribute to them, as well as forums.
                 Other roles include, but not limited to, presentation manager, project manager, and administrator.
+              </Typography>
+            </div>
+            <Typography className="language">PHP, Yii2, HTML, CSS, Ajax, JQuery</Typography>
+          </Paper>
+          <Paper elevation={8} className="card">
+            {/* Image Source: https://www.salesscreen.com/lp/sales-gamification-software/?campaignid=674481057&adgroupid=1168782040420013&network=o&device=c&_bt=&_bk=gamification&_bm=e&msclkid=a9e41601e94814d40e1875e0a64d05dd&utm_source=bing&utm_medium=cpc&utm_campaign=SEARCH%20%E2%88%92%20GLOBAL%20%E2%88%92%20Gamification%20%E2%88%92%20SMKAG&utm_term=gamification&utm_content=kw%20-%20gamification */}
+            <img src="./src/assets/gameBasedLearningPhoto.jpg" alt="A graphic of a binary tree, intended to represent a binary search tree." style={{ width: "100%", height: "270px", borderRadius: "5px" }} />
+            <Typography variant="h1" style={{ fontSize: "35px", textAlign: "center", textShadow: "5px 5px 5px rgba(0, 0, 0, 0.15)" }}>Game Based Learning System</Typography>
+            <div style={{ margin: "10px" }}>
+              <Typography variant="p" style={{ textShadow: "5px 5px 5px rgba(0, 0, 0, 0.15)" }}>
+                A web app built educators to use to assist in student learning using the adventure/task/reward based game structure.
+                Game Based Learning implements a hierarchical user structure and implements RBAC. Specifically, I developed business
+                frontend and backend logic for Organizations, Courses, Course Sections, and wrote several dozen tests.
               </Typography>
             </div>
             <Typography className="language">PHP, Yii2, HTML, CSS, Ajax, JQuery</Typography>
