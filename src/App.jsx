@@ -6,6 +6,16 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
 
+// Image imports
+import bannerImg from './assets/banner.jpg'
+import binarySearchTreeImg from './assets/binarySearchTree.jpg'
+import brandonLinkedinImg from './assets/brandon-linkedin.jpg'
+import ebayDesktopImg from './assets/ebayDesktop.jpg'
+import editDistanceImg from './assets/editDistance.jpg'
+import gameBasedLearningImg from './assets/gameBasedLearningPhoto.jpg'
+import shareHimImg from './assets/shareHimImg.jpg'
+import videostarImg from './assets/videostarPicture.jpg'
+
 function App() {
   return (
     <>
@@ -49,12 +59,12 @@ function App() {
       <header>
         {/* Image src: https://www.smh.com.au/opinion/my-experience-of-the-harassment-thats-been-missing-from-the-metoo-debate-20180112-h0h5kd.html */}
         <div>
-          <img src="./src/assets/banner.jpg" alt="Man typing on keyboard, website banner" id="splashImg" />
+          <img src={ bannerImg } alt="Man typing on keyboard, website banner" id="splashImg" />
           <div className="bannerGradient"></div>
         </div>
         <section id="bannerInformation">
           <Typography className="profileText">Brandon Gustrowsky</Typography>
-          <img src="./src/assets/brandon-linkedin.jpg" alt="Brandon Gustrowsky's profile picture, standing outside in suit and tie" id="profileImg" />
+          <img src={ brandonLinkedinImg } alt="Brandon Gustrowsky's profile picture, standing outside in suit and tie" id="profileImg" />
         </section>
       </header>
       <main style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
@@ -71,7 +81,7 @@ function App() {
         <section className="sectionLayout">
           <Paper elevation={8} className="card">
             {/* Image source: http://www.alltechflix.com/benefits-computer-programmer/ */}
-            <img src="./src/assets/binarySearchTree.jpg" alt="A graphic of a binary tree, intended to represent a binary search tree." style={{ height: "270px", width: "100%", borderRadius: "5px" }} />
+            <img src={ binarySearchTreeImg } alt="A graphic of a binary tree, intended to represent a binary search tree." style={{ height: "270px", width: "100%", borderRadius: "5px" }} />
             <Typography variant="h1" style={{ fontSize: "35px", textAlign: "center", textShadow: "5px 5px 5px rgba(0, 0, 0, 0.15)" }}>Huffman Encoding</Typography>
             <div style={{ margin: "10px" }}>
               <Typography variant="p" style={{ textShadow: "5px 5px 5px rgba(0, 0, 0, 0.15)" }}>This project reads in a text file from the command line and converts its contents to
@@ -84,7 +94,7 @@ function App() {
           </Paper>
           <Paper elevation={8} className="card">
             {/* Image Source: https://coursedown.com/network-concepts-and-programming-from-scratch/ */}
-            <img src="./src/assets/EditDistance.jpg" alt="A graphic of a binary tree, intended to represent a binary search tree." style={{ width: "100%", height: "270px", borderRadius: "5px" }} />
+            <img src={ editDistanceImg } alt="A graphic of a binary tree, intended to represent a binary search tree." style={{ width: "100%", height: "270px", borderRadius: "5px" }} />
             <Typography variant="h1" style={{ fontSize: "35px", textAlign: "center", textShadow: "5px 5px 5px rgba(0, 0, 0, 0.15)" }}>Edit Distance</Typography>
             <div style={{ margin: "10px" }}>
               <Typography variant="p" style={{ textShadow: "5px 5px 5px rgba(0, 0, 0, 0.15)" }}>
@@ -97,7 +107,7 @@ function App() {
           </Paper>
           <Paper elevation={8} className="card">
             {/* Image Source: https://www.moneycrashers.com/best-credit-cards-online-shopping/ */}
-            <img src="./src/assets/ebayDesktop.jpg" alt="A graphic of a binary tree, intended to represent a binary search tree." style={{ width: "100%", height: "270px", borderRadius: "5px" }} />
+            <img src={ ebayDesktopImg } alt="A graphic of a binary tree, intended to represent a binary search tree." style={{ width: "100%", height: "270px", borderRadius: "5px" }} />
             <Typography variant="h1" style={{ fontSize: "35px", textAlign: "center", textShadow: "5px 5px 5px rgba(0, 0, 0, 0.15)" }}>eBay Desktop App</Typography>
             <div style={{ margin: "10px" }}>
               <Typography variant="p" style={{ textShadow: "5px 5px 5px rgba(0, 0, 0, 0.15)" }}>
@@ -109,7 +119,7 @@ function App() {
           </Paper>
           <Paper elevation={8} className="card">
             {/* Image source: https://iceland-photo-tours.com/articles/camera-and-gear-reviews/beginner-s-guide-to-types-of-cameras-for-photography */}
-            <img src="./src/assets/videostarPicture.jpg" alt="A graphic of a binary tree, intended to represent a binary search tree." style={{ width: "100%", height: "270px", borderRadius: "5px" }} />
+            <img src={ videostarImg } alt="A graphic of a binary tree, intended to represent a binary search tree." style={{ width: "100%", height: "270px", borderRadius: "5px" }} />
             <Typography variant="h1" style={{ fontSize: "35px", textAlign: "center", textShadow: "5px 5px 5px rgba(0, 0, 0, 0.15)" }}>Video Star</Typography>
             <div style={{ margin: "10px" }}>
               <Typography variant="p" style={{ textShadow: "5px 5px 5px rgba(0, 0, 0, 0.15)" }}>
@@ -126,7 +136,7 @@ function App() {
         <section className="sectionLayout">
         <Paper elevation={8} className="card">
             {/* Image Source: https://execed.kelley.iu.edu/have-a-project-manager-mindset/ */}
-            <img src="./src/assets/sharehimImg.jpg" alt="A graphic of a binary tree, intended to represent a binary search tree." style={{ width: "100%", height: "270px", borderRadius: "5px" }} />
+            <img src={ shareHimImg } alt="A graphic of a binary tree, intended to represent a binary search tree." style={{ width: "100%", height: "270px", borderRadius: "5px" }} />
             <Typography variant="h1" style={{ fontSize: "35px", textAlign: "center", textShadow: "5px 5px 5px rgba(0, 0, 0, 0.15)" }}>ShareHim Content Authoring</Typography>
             <div style={{ margin: "10px" }}>
               <Typography variant="p" style={{ textShadow: "5px 5px 5px rgba(0, 0, 0, 0.15)" }}>
@@ -139,7 +149,7 @@ function App() {
           </Paper>
           <Paper elevation={8} className="card">
             {/* Image Source: https://www.salesscreen.com/lp/sales-gamification-software/?campaignid=674481057&adgroupid=1168782040420013&network=o&device=c&_bt=&_bk=gamification&_bm=e&msclkid=a9e41601e94814d40e1875e0a64d05dd&utm_source=bing&utm_medium=cpc&utm_campaign=SEARCH%20%E2%88%92%20GLOBAL%20%E2%88%92%20Gamification%20%E2%88%92%20SMKAG&utm_term=gamification&utm_content=kw%20-%20gamification */}
-            <img src="./src/assets/gameBasedLearningPhoto.jpg" alt="A graphic of a binary tree, intended to represent a binary search tree." style={{ width: "100%", height: "270px", borderRadius: "5px" }} />
+            <img src={ gameBasedLearningImg } alt="A graphic of a binary tree, intended to represent a binary search tree." style={{ width: "100%", height: "270px", borderRadius: "5px" }} />
             <Typography variant="h1" style={{ fontSize: "35px", textAlign: "center", textShadow: "5px 5px 5px rgba(0, 0, 0, 0.15)" }}>Game Based Learning System</Typography>
             <div style={{ margin: "10px" }}>
               <Typography variant="p" style={{ textShadow: "5px 5px 5px rgba(0, 0, 0, 0.15)" }}>
