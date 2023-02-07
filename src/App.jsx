@@ -13,7 +13,7 @@ import brandonLinkedinImg from './assets/brandon-linkedin.jpg'
 import ebayDesktopImg from './assets/ebayDesktop.jpg'
 import editDistanceImg from './assets/editDistance.jpg'
 import gameBasedLearningImg from './assets/gameBasedLearningPhoto.jpg'
-import shareHimImg from './assets/shareHimImg.jpg'
+import shareHimImg from './assets/sharehimImg.jpg'
 import videostarImg from './assets/videostarPicture.jpg'
 
 function App() {
