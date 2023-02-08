@@ -7,7 +7,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
 
 // Image imports
-import bannerImg from './assets/banner.jpg'
+// import bannerImg from './assets/banner.jpg'
 import binarySearchTreeImg from './assets/binarySearchTree.jpg'
 import brandonLinkedinImg from './assets/brandon-linkedin.jpg'
 import ebayDesktopImg from './assets/ebayDesktop.jpg'
@@ -56,33 +56,38 @@ function App() {
           </Tooltip>
         </Toolbar>
       </AppBar>
-      <header>
+      <header id="header">
         {/* Image src: https://www.smh.com.au/opinion/my-experience-of-the-harassment-thats-been-missing-from-the-metoo-debate-20180112-h0h5kd.html */}
-        <div>
-          <img src={ bannerImg } alt="Man typing on keyboard, website banner" id="splashImg" />
-          <div className="bannerGradient"></div>
-        </div>
-        <section id="bannerInformation">
-          <Typography className="profileText">Brandon Gustrowsky</Typography>
-          <img src={ brandonLinkedinImg } alt="Brandon Gustrowsky's profile picture, standing outside in suit and tie" id="profileImg" />
+        {/* <div> */}
+        {/* <img src={ bannerImg } alt="Man typing on keyboard, website banner" id="splashImg" /> */}
+        {/* <div className="bannerGradient"></div> */}
+        {/* </div> */}
+        <section id="bannerInformation" style={{display: "flex", gap: "50%"}}>
+          <div>
+            <Typography className="profileText">Brandon Gustrowsky</Typography>
+            <Typography variant="article" className="profileMessage" sx={{textAlign: "justify", wordWrap: "wrap"}}>
+              Hello! A little bit about me, my hobbies include running, swimming, pickleball, working out at the gym,
+              and technology. While my main emphasis in tech is web development, I am working my way into the fields
+              of AI and ML through online courses. From all available evidence the future is AI, and I want to be a
+              part of it. View my projects below :)
+            </Typography>
+          </div>
+          <img src={brandonLinkedinImg} alt="Brandon Gustrowsky's profile picture, standing outside in suit and tie" id="profileImg" />
         </section>
       </header>
       <main style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-        <Paper className="bannerTextLayout">
-          <Typography variant="h2" style={{fontWeight: "500"}}>About</Typography>
+        {/* <Paper className="bannerTextLayout">
+          <Typography variant="h2" style={{ fontWeight: "500" }}>About</Typography>
           <hr />
-          <Typography variant="article" className="profileMessage">A diligent junior Computer Science student with strong problem solving and communication
-            skills exemplified through placing first in the 2022 national SkillsUSA Web Design and Development Competition in Atlanta, Georgia. Possesses strong
-            teamwork and leadership qualities shown through previous internship experience. Currently tackling interest in machine learning by taking online courses
-            through Coursera and willfully enrolled in a calculus based statistics course at Southern Adventist University.</Typography>
-        </Paper>
+
+        </Paper> */}
         <hr />
         <Typography variant="h3" className="sectionTitle">Projects</Typography>
         <section className="sectionLayout">
-          <Paper elevation={8} className="card">
+          <Paper elevation={8} className="card" onClick={ () => {window.location.href = "https://github.com/BrandonGustrowsky/Huffman-Encoding"}}>
             {/* Image source: http://www.alltechflix.com/benefits-computer-programmer/ */}
-            <img src={ binarySearchTreeImg } alt="A graphic of a binary tree, intended to represent a binary search tree." style={{ height: "270px", width: "100%", borderRadius: "5px" }} />
-            <Typography variant="h1" style={{ fontSize: "35px", textAlign: "center", textShadow: "5px 5px 5px rgba(0, 0, 0, 0.15)" }}>Huffman Encoding</Typography>
+            <img src={binarySearchTreeImg} alt="A graphic of a binary tree, intended to represent a binary search tree." style={{ height: "270px", width: "100%", borderRadius: "5px" }} />
+            <Typography variant="h1" style={{ fontSize: "35px", textAlign: "center", textShadow: "5px 5px 5px rgba(0, 0, 0, 0.15)", marginTop: "10px" }}>Huffman Encoding</Typography>
             <div style={{ margin: "10px" }}>
               <Typography variant="p" style={{ textShadow: "5px 5px 5px rgba(0, 0, 0, 0.15)" }}>This project reads in a text file from the command line and converts its contents to
                 one large string after removing all non-alphabetic characters. It nicely prints the number of times each letter
@@ -92,10 +97,10 @@ function App() {
             </div>
             <Typography className="language">C++</Typography>
           </Paper>
-          <Paper elevation={8} className="card">
+          <Paper elevation={8} className="card" onClick={ () => {window.location.href = "https://github.com/BrandonGustrowsky/Edit-Distance"}}>
             {/* Image Source: https://coursedown.com/network-concepts-and-programming-from-scratch/ */}
-            <img src={ editDistanceImg } alt="A graphic of a binary tree, intended to represent a binary search tree." style={{ width: "100%", height: "270px", borderRadius: "5px" }} />
-            <Typography variant="h1" style={{ fontSize: "35px", textAlign: "center", textShadow: "5px 5px 5px rgba(0, 0, 0, 0.15)" }}>Edit Distance</Typography>
+            <img src={editDistanceImg} alt="A graphic of a binary tree, intended to represent a binary search tree." style={{ width: "100%", height: "270px", borderRadius: "5px" }} />
+            <Typography variant="h1" style={{ fontSize: "35px", textAlign: "center", textShadow: "5px 5px 5px rgba(0, 0, 0, 0.15)", marginTop: "10px" }}>Edit Distance</Typography>
             <div style={{ margin: "10px" }}>
               <Typography variant="p" style={{ textShadow: "5px 5px 5px rgba(0, 0, 0, 0.15)" }}>
                 Given two strings, this program uses dynamic programming techniques to calculate the minimal number of edits needed to
@@ -105,10 +110,10 @@ function App() {
             </div>
             <Typography className="language">Java</Typography>
           </Paper>
-          <Paper elevation={8} className="card">
+          <Paper elevation={8} className="card" onClick={ () => { window.location.href = "https://github.com/BrandonGustrowsky/EBay-Desktop-App"}}>
             {/* Image Source: https://www.moneycrashers.com/best-credit-cards-online-shopping/ */}
-            <img src={ ebayDesktopImg } alt="A graphic of a binary tree, intended to represent a binary search tree." style={{ width: "100%", height: "270px", borderRadius: "5px" }} />
-            <Typography variant="h1" style={{ fontSize: "35px", textAlign: "center", textShadow: "5px 5px 5px rgba(0, 0, 0, 0.15)" }}>eBay Desktop App</Typography>
+            <img src={ebayDesktopImg} alt="A graphic of a binary tree, intended to represent a binary search tree." style={{ width: "100%", height: "270px", borderRadius: "5px" }} />
+            <Typography variant="h1" style={{ fontSize: "35px", textAlign: "center", textShadow: "5px 5px 5px rgba(0, 0, 0, 0.15)", marginTop: "10px" }}>eBay Desktop App</Typography>
             <div style={{ margin: "10px" }}>
               <Typography variant="p" style={{ textShadow: "5px 5px 5px rgba(0, 0, 0, 0.15)" }}>
                 Users can create an account based on the university they attend, view recently added products, search for products, and perform basic CRUD operations assuming they are
@@ -117,10 +122,10 @@ function App() {
             </div>
             <Typography className="language">PyQt5, Python</Typography>
           </Paper>
-          <Paper elevation={8} className="card">
+          <Paper elevation={8} className="card" onClick={ () => { window.location.href = "https://github.com/BrandonGustrowsky/VideoStar"}}>
             {/* Image source: https://iceland-photo-tours.com/articles/camera-and-gear-reviews/beginner-s-guide-to-types-of-cameras-for-photography */}
-            <img src={ videostarImg } alt="A graphic of a binary tree, intended to represent a binary search tree." style={{ width: "100%", height: "270px", borderRadius: "5px" }} />
-            <Typography variant="h1" style={{ fontSize: "35px", textAlign: "center", textShadow: "5px 5px 5px rgba(0, 0, 0, 0.15)" }}>Video Star</Typography>
+            <img src={videostarImg} alt="A graphic of a binary tree, intended to represent a binary search tree." style={{ width: "100%", height: "270px", borderRadius: "5px" }} />
+            <Typography variant="h1" style={{ fontSize: "35px", textAlign: "center", textShadow: "5px 5px 5px rgba(0, 0, 0, 0.15)", marginTop: "10px" }}>VideoStar</Typography>
             <div style={{ margin: "10px" }}>
               <Typography variant="p" style={{ textShadow: "5px 5px 5px rgba(0, 0, 0, 0.15)" }}>
                 A video sharing platform where users can view a variety of short videos fetched from a third party API. Videos may be either free or priced where free videos can be
@@ -134,13 +139,13 @@ function App() {
         <hr />
         <Typography variant="h4" className="sectionTitle">Professional</Typography>
         <section className="sectionLayout">
-        <Paper elevation={8} className="card">
+          <Paper elevation={8} className="card">
             {/* Image Source: https://execed.kelley.iu.edu/have-a-project-manager-mindset/ */}
-            <img src={ shareHimImg } alt="A graphic of a binary tree, intended to represent a binary search tree." style={{ width: "100%", height: "270px", borderRadius: "5px" }} />
-            <Typography variant="h1" style={{ fontSize: "35px", textAlign: "center", textShadow: "5px 5px 5px rgba(0, 0, 0, 0.15)" }}>ShareHim Content Authoring</Typography>
+            <img src={shareHimImg} alt="A graphic of a binary tree, intended to represent a binary search tree." style={{ width: "100%", height: "270px", borderRadius: "5px" }} />
+            <Typography variant="h1" style={{ fontSize: "35px", textAlign: "center", textShadow: "5px 5px 5px rgba(0, 0, 0, 0.15)", marginTop: "10px" }}>ShareHim Content Authoring</Typography>
             <div style={{ margin: "10px" }}>
               <Typography variant="p" style={{ textShadow: "5px 5px 5px rgba(0, 0, 0, 0.15)" }}>
-                A hierarchicaly structured project management website. An authenticated and authorized user with no special 
+                A hierarchicaly structured project management website. An authenticated and authorized user with no special
                 permissions may view projects and presentations they have been added to contribute to them, as well as forums.
                 Other roles include, but not limited to, presentation manager, project manager, and administrator.
               </Typography>
@@ -149,8 +154,8 @@ function App() {
           </Paper>
           <Paper elevation={8} className="card">
             {/* Image Source: https://www.salesscreen.com/lp/sales-gamification-software/?campaignid=674481057&adgroupid=1168782040420013&network=o&device=c&_bt=&_bk=gamification&_bm=e&msclkid=a9e41601e94814d40e1875e0a64d05dd&utm_source=bing&utm_medium=cpc&utm_campaign=SEARCH%20%E2%88%92%20GLOBAL%20%E2%88%92%20Gamification%20%E2%88%92%20SMKAG&utm_term=gamification&utm_content=kw%20-%20gamification */}
-            <img src={ gameBasedLearningImg } alt="A graphic of a binary tree, intended to represent a binary search tree." style={{ width: "100%", height: "270px", borderRadius: "5px" }} />
-            <Typography variant="h1" style={{ fontSize: "35px", textAlign: "center", textShadow: "5px 5px 5px rgba(0, 0, 0, 0.15)" }}>Game Based Learning System</Typography>
+            <img src={gameBasedLearningImg} alt="A graphic of a binary tree, intended to represent a binary search tree." style={{ width: "100%", height: "270px", borderRadius: "5px" }} />
+            <Typography variant="h1" style={{ fontSize: "35px", textAlign: "center", textShadow: "5px 5px 5px rgba(0, 0, 0, 0.15)", marginTop: "10px" }}>Game Based Learning System</Typography>
             <div style={{ margin: "10px" }}>
               <Typography variant="p" style={{ textShadow: "5px 5px 5px rgba(0, 0, 0, 0.15)" }}>
                 A web app built educators to use to assist in student learning using the adventure/task/reward based game structure.
