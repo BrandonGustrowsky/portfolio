@@ -97,7 +97,7 @@ function App() {
             </div>
             <Typography className="language">C++</Typography>
           </Paper>
-          <Paper elevation={8} className="card">
+          <Paper elevation={8} className="card" onClick={ () => {window.location.href = "https://github.com/BrandonGustrowsky/Edit-Distance"}}>
             {/* Image Source: https://coursedown.com/network-concepts-and-programming-from-scratch/ */}
             <img src={editDistanceImg} alt="A graphic of a binary tree, intended to represent a binary search tree." style={{ width: "100%", height: "270px", borderRadius: "5px" }} />
             <Typography variant="h1" style={{ fontSize: "35px", textAlign: "center", textShadow: "5px 5px 5px rgba(0, 0, 0, 0.15)", marginTop: "10px" }}>Edit Distance</Typography>
@@ -110,7 +110,7 @@ function App() {
             </div>
             <Typography className="language">Java</Typography>
           </Paper>
-          <Paper elevation={8} className="card">
+          <Paper elevation={8} className="card" onClick={ () => { window.location.href = "https://github.com/BrandonGustrowsky/EBay-Desktop-App"}}>
             {/* Image Source: https://www.moneycrashers.com/best-credit-cards-online-shopping/ */}
             <img src={ebayDesktopImg} alt="A graphic of a binary tree, intended to represent a binary search tree." style={{ width: "100%", height: "270px", borderRadius: "5px" }} />
             <Typography variant="h1" style={{ fontSize: "35px", textAlign: "center", textShadow: "5px 5px 5px rgba(0, 0, 0, 0.15)", marginTop: "10px" }}>eBay Desktop App</Typography>
@@ -122,7 +122,7 @@ function App() {
             </div>
             <Typography className="language">PyQt5, Python</Typography>
           </Paper>
-          <Paper elevation={8} className="card">
+          <Paper elevation={8} className="card" onClick={ () => { window.location.href = "https://github.com/BrandonGustrowsky/VideoStar"}}>
             {/* Image source: https://iceland-photo-tours.com/articles/camera-and-gear-reviews/beginner-s-guide-to-types-of-cameras-for-photography */}
             <img src={videostarImg} alt="A graphic of a binary tree, intended to represent a binary search tree." style={{ width: "100%", height: "270px", borderRadius: "5px" }} />
             <Typography variant="h1" style={{ fontSize: "35px", textAlign: "center", textShadow: "5px 5px 5px rgba(0, 0, 0, 0.15)", marginTop: "10px" }}>VideoStar</Typography>
