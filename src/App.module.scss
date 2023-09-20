@@ -1,0 +1,169 @@
+@import url("./common/styles/variables.scss");
+
+html,
+body {
+    margin: 0;
+    padding: 0 20px 10px 20px;
+    background: var(--background);
+
+    @media screen and (max-width: 600px) {
+        & {
+            padding: 0 5px;
+        }
+    }
+
+    @media screen and (max-width: 450px) {
+        overflow-x: hidden;
+    }
+}
+
+#header {
+    width: 100%;
+
+    #bannerInformation {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        height: max-content;
+
+        .text-container {
+            width: 50%;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+
+            .profileText {
+                text-align: center;
+                text-align-last: center;
+                font-size: 80px;
+                font-weight: 500;
+                color: var(--black);
+                line-height: 100px;
+
+                @media screen and (max-width: 450px) {
+                    font-size: 50px;
+                    line-height: 60px;
+                }
+
+                @media screen and (max-width: 280px) {
+                    font-size: 35px;
+                }
+            }
+
+            .description-container {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+
+                .profileMessage {
+                    line-height: 25px;
+                    font-size: 19px;
+                    text-align: center;
+                    color: var(--black);
+
+                    @media screen and (max-width: 400px) {
+                        font-size: 15px;
+                        line-height: 20px;
+                    }
+                }
+            }
+
+            @media screen and (max-width: 925px) {
+                & {
+                    width: 100%;
+                    height: max-content;
+                    gap: 20px;
+                    justify-content: space-around;
+                }
+            }
+        }
+        
+        #profile-img {
+            width: 400px;
+            height: 600px;
+            background-image: url("./assets/brandon-linkedin.jpg");
+            background-repeat: no-repeat;
+
+            background-size: contain;
+            background-position: top top;
+            border: 1px solid var(--maroon);
+            border-radius: 6px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
+        @media screen and (max-width: 925px) {
+            & {
+                gap: 20px;
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+.main {
+    // padding-bottom: 20px;
+    // margin-bottom: 20px;
+}
+
+hr {
+    margin: 30px 0;
+    width: 90%;
+    border: 1px solid var(--maroon);
+    border-radius: 6px;
+    ;
+}
+
+.section-layout {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 820px) {
+    main {
+        padding: 10px 2%;
+    }
+
+    main .bannerTextLayout {
+        width: 80%;
+    }
+
+    .section-layout {
+        align-items: center;
+        justify-content: center;
+        row-gap: 0;
+        flex-wrap: none;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    html, body {
+        padding: 0;
+    }
+    main {
+        padding: 10px 1%;
+    }
+
+    #bannerInformation {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    main .sectionLayout {
+        align-self: center;
+    }
+}
+
+// Ultra wide screens
+@media screen and (min-width: 3000px) {
+    html, body {
+        padding: 0 10vw;
+    }
+}
