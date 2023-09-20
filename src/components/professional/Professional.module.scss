@@ -1,0 +1,112 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+    justify-content: space-evenly;
+    width: 100%;
+    background: var(--card-background);
+    outline: 3px solid var(--white);
+    line-height: 22px;
+    text-align: justify;
+    font-size: 18px;
+    margin: 10px 0 5px;
+    padding: 20px 20px 5px 20px;
+    border-radius: 6px;
+    transition: 0.15s ease-out;
+
+    @media screen and (max-width: 600px) {
+        align-items: center;
+    }
+
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+        width: 100%;
+
+        .title {
+            font-size: 25px;
+            text-align: center;
+            font-weight: 500;
+            text-shadow: 2px 2px 52x rgba(0, 0, 0, 0.15);
+        }
+
+        .company {
+            font-size: 21px;
+            font-weight: 400;
+            transition: 0.15s ease-out;
+            padding: 12px;
+
+            &:hover {
+                background: rgba(50, 50, 50, 0.1);
+                border-radius: 6px;
+            }
+
+            @media screen and (max-width: 820px) {
+                font-size: 14px;
+                text-align: center;
+            }
+        }
+    }
+
+    
+
+    .description {
+        font-size: 15px;
+    }
+
+    .footer {
+        display: flex;
+        width: 100%;
+        gap: 10px;
+        align-items: center;
+    }
+}
+
+.card:hover {
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.09) 0 5px 8px 3px;
+    outline: 1px solid var(--maroon);
+}
+
+.languages-container {
+    bottom: 0;
+    gap: 5px;
+    display: flex;
+
+    .language {
+        font-weight: 1000;
+
+        @media screen and (max-width: 450px) {
+            font-size: 11px;
+        }
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .card {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .card {
+        align-self: center;
+        justify-self: center;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .card {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .card {
+        align-self: center;
+        justify-self: center;
+    }
+}

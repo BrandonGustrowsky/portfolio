@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "start": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
@@ -14,8 +14,10 @@
     "@fontsource/roboto": "^4.5.8",
     "@mui/icons-material": "^5.10.16",
     "@mui/material": "^5.10.15",
+    "prettier": "^3.0.3",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "sass": "^1.67.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.24",
