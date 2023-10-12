@@ -1,3 +1,4 @@
+import React from 'react';
 import { Box } from "@mui/material";
 import binarySearchTreeImg from '../../assets/binarySearchTree.jpg'
 import { IconButton, Typography, Tooltip } from '@mui/material';
@@ -6,9 +7,9 @@ import styles from "./Project.module.scss";
 import GitHubIcon from '@mui/icons-material/GitHub';
 
 const Project = (props) => {
-    const { name, description, link, altText, languages } = props
+    const { name, description, link, altText, isPrivate, languages } = props
     return (
-        <Box className={styles.card} onClick={() => { window.location.href = link }}>
+        <Box className={styles.card} onClick={() => { !isPrivate ? window.open(link) : null }}>
             {/* Image source: http://www.alltechflix.com/benefits-computer-programmer/ */}
             {/* <img src={binarySearchTreeImg} alt={altText} style={{ height: "270px", width: "100%", borderRadius: "5px" }} /> */}
             <Typography variant="p" className={styles["title"]}>{name}</Typography>
@@ -26,7 +27,7 @@ const Project = (props) => {
                         })}
                     </Typography>
                 </Box>
-                <Tooltip title={link} arrow>
+                <Tooltip title={!isPrivate ? link : "Private Repository"} arrow>
                     <IconButton className={styles["github-btn"]}>
                         <GitHubIcon />
                     </IconButton>

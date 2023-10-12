@@ -1,3 +1,4 @@
+import React from 'react';
 import { Typography, Box } from '@mui/material';
 // Image imports
 // import bannerImg from './assets/banner.jpg'
@@ -48,6 +49,7 @@ function App() {
                                 description={project.description}
                                 link={project.link}
                                 altText={project.altText}
+                                isPrivate={project.isPrivate}
                                 languages={project.languages}
                             />
                         })
@@ -62,6 +64,7 @@ function App() {
                             company={professional.company}
                             name={professional.name}
                             description={professional.description}
+                            link={professional.link}
                             altText={professional.altText}
                             languages={professional.languages}
                         />

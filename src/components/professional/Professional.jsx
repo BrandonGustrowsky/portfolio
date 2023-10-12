@@ -1,16 +1,17 @@
+import React from 'react';
 import { Box, Tooltip, Typography } from "@mui/material";
 import styles from "./Professional.module.scss"
 
 const Professional = (props) => {
-    const { company, name, description, altText, languages } = props;
+    const { company, name, description, altText, languages, link } = props;
     return (
         <Box elevation={8} className={styles["card"]}>
             {/* Image Source: https://execed.kelley.iu.edu/have-a-project-manager-mindset/ */}
             {/* <img src={""} alt="A graphic of a binary tree, intended to represent a binary search tree." style={{ width: "100%", height: "270px", borderRadius: "5px" }} /> */}
             <Box className={styles["header-container"]}>
                 <Typography variant="h1" className={styles["title"]}>{name}</Typography>
-                <Tooltip title="https://www.southern.edu/" arrow placement="top">
-                    <Typography variant="h2" className={styles["company"]}>{company}</Typography>
+                <Tooltip title={link} arrow placement="top">
+                    <Typography variant="h2" className={styles["company"]} onClick={() => {window.open(link)}}>{company}</Typography>
                 </Tooltip>
             </Box>
             <Box>
@@ -21,7 +22,7 @@ const Professional = (props) => {
                     <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z" />
                 </svg>
                 <Typography className={styles["languages-container"]}>{languages.map((language, index) => {
-                    return <p className={styles["language"]}>{`${language}${index < languages.length - 1 ? ", " : ""}`}</p>
+                    return <p key={index} className={styles["language"]}>{`${language}${index < languages.length - 1 ? ", " : ""}`}</p>
                 })}</Typography>
             </Box>
         </Box>

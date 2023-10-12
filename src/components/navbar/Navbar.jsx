@@ -1,3 +1,4 @@
+import React from 'react';
 import { AppBar, Toolbar } from "@mui/material";
 import styles from "./Navbar.module.scss";
 import NavbarButton from "../navbar_button/NavbarButton";
